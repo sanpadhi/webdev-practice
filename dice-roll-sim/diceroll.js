@@ -42,10 +42,10 @@ function getDiceFace(rollResult){
     }
 }
 
-buttonE1.addEventListener("click", ()=>{
+buttonEl.addEventListener("click", () => {
     diceEl.classList.add("roll-animation");
     setTimeout(() => {
         diceEl.classList.remove("roll-animation");
-        rollDice()
+        rollDice();
     }, 1000);
 });
