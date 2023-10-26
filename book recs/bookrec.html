@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Book Recommendation System</h1>
+    <p>Answer a few questions to get personalized book recommendations:</p>
+    <form id="preference-form">
+        <label for="genre">1. What is your favorite genre?</label>
+        <select id="genre" name="genre">
+            <option value="romance">Romance</option>
+            <option value="mystery">Mystery</option>
+            <option value="sciencefiction">Science Fiction</option>
+            <option value="danmei">Danmei</option>
+            <option value="thriller">Thriller</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="historicalfiction">Historical Fiction</option>
+            <!-- Add more genre options here -->
+        </select>
+    
+        <label for="authors">2. Any favorite authors or books you've enjoyed?</label>
+        <input type="text" id="authors" name="authors" placeholder="e.g., J.K. Rowling, The Catcher in the Rye">
+    
+        <label for="series">3. Do you prefer standalone books or series?</label>
+        <input type="radio" id="standalone" name="series" value="standalone"> Standalone
+        <input type="radio" id="series" name="series" value="series"> Series
+    
+        <label for="themes">4. Interested in specific themes or topics?</label>
+        <input type="text" id="themes" name="themes" placeholder="e.g., history, self-help, technology">
+    
+        <label for="avoid-genres">5. Any genres or types of books to avoid?</label>
+        <input type="text" id="avoid-genres" name="avoid-genres" placeholder="e.g., horror, romance, fantasy">
+        
+        <button type="button" id="get-recommendations-button">Get Recommendations</button>
+    </form>
+    
+    <h2>Recommended Books:</h2>
+    <ul id="recommendations"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>
